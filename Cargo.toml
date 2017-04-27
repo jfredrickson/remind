@@ -1,0 +1,9 @@
+[package]
+name = "remind"
+version = "0.1.0"
+authors = ["Jeff Fredrickson <jeff.fredrickson@gmail.com>"]
+
+[dependencies]
+notify-rust = "3.0"
+regex = "0.2.1"
+daemonize = "0.2.3"
