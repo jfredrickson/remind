@@ -5,7 +5,7 @@ A simple command-line tool that reminds you, via a notification, to do something
 ## Usage
 
 ```
-$ remind DELAY MESSAGE
+$ remind DELAY [MESSAGE]
 ```
 
 * `DELAY` is the amount of time before you get a notification. It should be a number followed by 's' (for seconds), 'm' (for minutes) or 'h' (for hours).

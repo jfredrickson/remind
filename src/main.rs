@@ -34,7 +34,7 @@ fn main() {
 }
 
 fn print_usage() {
-    println!("Usage: {} <DELAY> <MESSAGE>", env::args().nth(0).unwrap());
+    println!("Usage: {} <DELAY> [MESSAGE]", env::args().nth(0).unwrap());
 }
 
 fn notify(message: String) {
