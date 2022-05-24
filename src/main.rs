@@ -9,7 +9,7 @@ use std::time;
 use regex::Regex;
 use daemonize::Daemonize;
 use notify_rust::Notification;
-use notify_rust::NotificationHint as Hint;
+use notify_rust::Hint;
 
 fn main() {
     let (delay, message) = parse_args();
@@ -48,8 +48,8 @@ fn notify(message: String) {
 }
 
 fn parse_args() -> (String, String) {
-    let mut delay: String = "".to_string();
-    let mut message: String = "".to_string();
+    let mut delay: String = String::new();
+    let mut message: String = String::new();
     for (index, arg) in env::args().enumerate() {
         if index == 1 {
             delay = arg;
