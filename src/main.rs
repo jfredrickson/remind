@@ -55,6 +55,7 @@ fn parse_args() -> (String, String) {
             delay = arg;
         } else if index > 1 {
             message = message + " " + &arg;
+            message = message.trim().to_string();
         }
     }
     (delay, message)
