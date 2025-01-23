@@ -42,6 +42,7 @@ fn notify(message: String) {
         .summary("Reminder")
         .body(message.as_str())
         .timeout(0)
+        .hint(Hint::ImagePath("alarm-clock".to_string()))
         .show()
         .unwrap();
 }
