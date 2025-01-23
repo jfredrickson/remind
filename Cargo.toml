@@ -2,6 +2,7 @@
 name = "remind"
 version = "0.1.1"
 authors = ["Jeff Fredrickson <jeff.fredrickson@gmail.com>"]
+edition = "2021"
 
 [dependencies]
 notify-rust = "^4.11.4"
