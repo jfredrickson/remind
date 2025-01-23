@@ -41,8 +41,7 @@ fn notify(message: String) {
     Notification::new()
         .summary("Reminder")
         .body(message.as_str())
-        .timeout(10000)
-        .hint(Hint::Resident(true))
+        .timeout(0)
         .show()
         .unwrap();
 }
